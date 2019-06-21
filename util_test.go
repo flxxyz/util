@@ -107,3 +107,8 @@ func TestIpAddrCheck(t *testing.T) {
 	}
 	t.Logf("%s ip地址%s", ip, s)
 }
+
+func TestResolveAddress(t *testing.T) {
+	addr := ResolveAddress("", "2000")
+	t.Log(addr)
+}
