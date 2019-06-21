@@ -1,7 +1,6 @@
 package convert
 
 import (
-	"github.com/flxxyz/go-server/app/tool/convert"
 	"github.com/flxxyz/util"
 	"reflect"
 	"strconv"
@@ -58,7 +57,8 @@ func IntTo64(v int) int64 {
 
 // string转换int
 func StrToInt(v string) int {
-	return convert.StrToInt(v)
+	i, _ := strconv.Atoi(v)
+	return i
 }
 
 // string转换int64
